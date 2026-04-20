@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizalito Quilino Jr. | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Monochrome Palette for the UI */
+    :root {
+      --bg: #000000;
+      --card: #0a0a0a;
+      --accent: #ffffff;
+      --text: #ffffff;
+      --muted: #a0a0a0;
+      --border: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      /* Clean White Header */
+      background: #ffffff;
+      color: #000000;
+      border-bottom: 10px solid #111;
+    }
+
+    header h1 {
+      font-size: 42px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0px; /* Sharp modern edges */
+      padding: 25px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      background: #111;
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* Images RETAIN COLOR */
+    .profile-img {
+      width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid var(--border);
+    }
+
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .grid-gallery img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      /* No grayscale filter */
+      border: 1px solid var(--border);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .grid-gallery img:hover {
+      transform: scale(1.05);
+      border-color: var(--accent);
+    }
+
+    /* Videos RETAIN COLOR */
+    iframe {
+      width: 100%;
+      /* No grayscale filter */
+      margin-top: 15px;
+      aspect-ratio: 16/9;
+      border: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      font-size: 13px;
+    }
+
+    .feedback input, .feedback textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      background: #000;
+      color: white;
+      outline: none;
+    }
+
+    .feedback button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 12px;
+      border: 1px solid var(--accent);
+      background: transparent;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .feedback button:hover {
+      background: white;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      background: #000;
+      border-top: 1px solid var(--border);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    /* Social Icons RETAIN COLOR */
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    b {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <p>IT Student &bull; UI/UX Designer</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>About Me</h2>
+    <img class="profile-img" src="/1776684466491.png" alt="Profile Image" />
+    <p>I’m <b>Rizalito Dunque Quilino Jr.</b>, an IT student at CPSU from Negros Occidental. I specialize in minimal designs and technical exploration.</p>
+  </div>
+
+  <div class="card">
+    <h2>Skills & Experience</h2>
+    <p><b>Technical:</b></p>
+    <p>&bull; Figma UI/UX Designs</p>
+    <p>&bull; Graphic Design (Photoshop, Canva)</p>
+    <p>&bull; Database Management (MySQL)</p>
+    <br>
+    <p><b>Soft Skills:</b></p>
+    <p>&bull; Teamwork & Collaboration</p>
+    <p>&bull; Presentation & Reporting</p>
+  </div>
+
+  <div class="card">
+    <h2>Works</h2>
+    <div class="grid-gallery">
+      <img src="/Activity 2 (1).jpg" />
+      <img src="Screenshot_2025-10-20-23-02-48-74_e2d5b3f32b79de1d45acd1fad96fbb0f.jpg" />
+      <img src="/Practical  (2).jpg" />
+      <img src="/Screenshot_2025-10-21-13-49-57-84_c0d35d5c8ea536686f7fb1c9f2f8f274.jpg" />
+      <img src="/mysql_create_database_from_script_2.png" />
+     <img src="/Screenshot_2025-10-20-23-02-09-71_e2d5b3f32b79de1d45acd1fad96fbb0f.jpg"/>
+      <img src="/select-MySQL-command-example.jpg" />
+    </div>
+    
+    <h3>Certificates</h3>
+    <div class="grid-gallery">
+      <img src="/IMG_20260420_195621.jpg" />
+      <img src="/IMG_20260420_195653.jpg" />
+      <img src="/IMG_20260420_195722.jpg" />
+    </div>
+    
+    <div style="margin-top: 15px;">
+      <p><a href="https://canva.link/x4nyfjetca3locs">: View Canva Projects</a></p>
+      <p><a href="#">: View Figma Work</a></p>
+      
+      <p><a href="https://canva.link/lxmox3ovrd2l8w6">:View Canva Personal Portfolio</a></p>
+    </div>
+  </div>
+  
+  <h4>My Resume</h4>
+  <div>
+    <p><a href="/resume.html">:View Resume</a></p>
+  </div>
+  
+  <div class="card">
+    <h2>Media</h2>
+    <iframe src="https://www.youtube.com/embed/fDqwAiVR5JU"></iframe>
+    <iframe src="https://www.youtube.com/embed/y74UPiaK7u0"></iframe>
+  </div>
+
+  <div class="card feedback">
+    <h2>Feedback</h2>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+    <textarea rows="4" placeholder="Message..."></textarea>
+    <button type="submit">Send Message</button>
+  </div>
+</div>
+
+<footer>
+  <h2>Contact Me</h2>
+  <div class="social-icons">
+    <a href="#"><img src="/facebook-logo-blue-circle_705838-12823.jpg" alt="Facebook" /></a>
+    <a href="#"><img src="/2048px-Instagram_logo_2016.svg.png" alt="Instagram" /></a>
+    <a href="mailto:example@gmail.com"><img src="/gmail_new_logo_icon_159149.png" alt="Gmail" /></a>
+  </div>
+  <p style="margin-top: 20px; font-size: 11px; color: var(--muted); letter-spacing: 1px;">&copy; 2026 Rizalito Quilino Jr. &bull; MONOCHROME EDITION</p>
+</footer>
+
+</body>
+</html>
